@@ -65,4 +65,5 @@
 .justUpper
 {
     margin-top: 100px;
+    color: var(--color-texttwo);
 }

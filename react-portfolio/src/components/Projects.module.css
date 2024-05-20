@@ -1,0 +1,73 @@
+@import '../vars.css';
+
+.container
+{
+    margin-top: 76px;
+    margin-left: 10% ;
+    margin-right: 10%;
+}
+.mainhead
+{
+    font-size: 60px;
+    letter-spacing: 1.75px;
+    padding-bottom: 20px;
+    color: var(--color-textone);
+}
+.projects
+{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+.project
+{
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: var(--color-about);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .2s ease-in-out;
+}
+.head
+{
+    font-size: 23px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: var(--color-texttwo);
+}
+.desp
+{
+    font-size: 17px;
+    color:rgba(245, 245, 245, 0.794);
+    padding-bottom: 20px;
+}
+.btn
+{
+    text-decoration: none;
+    background-color:rgba(245, 245, 245, 0.794);
+    color: var(--color-texttwo);
+    font-size: 17px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 20px;
+}
+.project:hover
+{
+    transform: scale(1.1);
+}
+.justUpper
+{
+    margin-top: 60px;
+    color: var(--color-about);
+}

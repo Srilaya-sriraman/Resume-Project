@@ -1,0 +1,27 @@
+.container
+{
+    background-color: #401212ae;
+    padding-top: 30px;
+    height: 100px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+
+}
+.img
+{
+    width:50px
+}
+.content
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.desp
+{
+    font-size: 23px;
+    color: var(--color-textone);
+}
