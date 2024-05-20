@@ -1,0 +1,97 @@
+@import "../vars.css";
+.container
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    margin-left: 5%;
+    margin-right: 7%;
+    margin-top: 10px;
+
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-textone);
+    z-index: 1;
+    margin-top: 150px;
+    margin-left: 20px;
+}
+.title
+{  
+    font-size: 65px;
+    margin-bottom: 33px;
+}
+
+.description
+{
+    font-size: 25px;
+}
+.contactBtn
+{
+    text-decoration: none;
+    background-color:  rgba(209, 208, 208, 0.9);
+    padding: 22px;
+    border-radius: 40px;
+    font-size: 25px;
+    color: var(--color-texttwo);
+    box-shadow:  0 0 4px 0 rgba(0,0,0,0.25);
+    margin-top: 52px;
+}
+
+.justupper
+{
+    margin-top: 180px;
+    color: var(--color-about);
+}
+
+.IntroImg
+{
+    margin-top: -65px;
+    width: 40%;
+    z-index: 1;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0%
+    {
+        transform: translate(0,0px);
+    }
+    50%
+    {
+        transform: translate(0,10px);
+    }
+    100%
+    {
+        transform: translate(0,-0px);
+    }
+}
+
+@media screen and (max-width: 830px)
+{
+    .container
+    {
+        flex-direction: column-reverse;
+    }
+    .content{
+        align-items: center;
+    }
+    .IntroImg
+    {   
+        width:50%;
+        margin-top: 30px;
+    }
+    .title
+    {
+        margin-top: -70px;
+    }
+}

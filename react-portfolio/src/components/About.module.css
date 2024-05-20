@@ -1,0 +1,68 @@
+@import "../vars.css";
+.container
+{
+    background-color: var(--color-about);
+    color: var(--color-textone);
+    position: relative;
+    z-index: 1;
+    margin-left: 3.5%;
+    margin-right: 7%;
+    margin-top: 10px;
+    padding: 30px 30px;
+    border-radius: 20px;
+}
+.title
+{
+    font-size: 55px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+.styleIt
+{
+    display: flex;
+}
+.contenthead
+{
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    color: var(--color-texttwo);
+}
+.desp
+{
+    font-size: 20px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+.group
+{   
+    margin-bottom: 40px;
+    padding: 10px;
+    list-style-type: none;
+    transition: all .2s ease-in-out;
+}
+.bringdown
+{
+    margin-top: 20px;
+    padding-right: 80px;
+}
+.group:hover
+{
+    background-color:rgba(255, 228, 196, 0.148);
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+.Aboutimg
+{
+    padding-right: 30px;
+}
+@media screen and (max-width: 830px){
+    .Aboutimg
+    {
+        display: none;
+    }
+}
+.justUpper
+{
+    margin-top: 100px;
+}

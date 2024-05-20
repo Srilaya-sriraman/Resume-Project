@@ -1,0 +1,99 @@
+@import "../vars.css";
+.navbar
+{
+    background-color: rgba(209, 208, 208, 0.689);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 41px;
+    z-index: 2;
+    margin: 0;
+    padding: 2% 5%;
+}
+
+.title
+{
+    font-size: 35px;
+    font-weight: 600px;
+    text-decoration: none;
+    color: var(--color-texttwo);
+}
+
+.menu
+{
+    display: flex;
+}
+
+.menuitems
+{
+    display: flex;
+    gap:47px;
+    list-style: none;
+}
+
+.menuitems a{
+    font-size: 25px;
+    color: var(--color-texttwo);
+    text-decoration: none;
+}
+.menuBtn
+{
+    display: none;
+}
+
+@media screen and (max-width: 830px)
+{
+    .navbar
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu
+    {
+        position: absolute;
+        right: 0;
+        margin-right: 5%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap:11px;
+        z-index: 3;
+    }
+
+    .menuBtn
+    {
+        display: block;
+        cursor: pointer;
+        width: 50px;
+    }
+
+    .menuitems
+    {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap:13px;
+        border-radius: 10px;
+        background-color:var(--color-about) ;
+        padding: 24px 33px;
+    }
+
+    .menuOpen
+    {
+        display: flex;
+        z-index: 1;
+    }
+    .menuOpenp
+    {
+        animation-name: rotating;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes rotating{
+        50%
+        {
+            transform: rotate(90deg);
+        }
+    }
+}
